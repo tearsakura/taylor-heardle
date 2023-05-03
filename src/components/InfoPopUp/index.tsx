@@ -15,14 +15,18 @@ export function InfoPopUp({ onClose }: Props) {
         <h1>HOW TO PLAY</h1>
         <Styled.Spacer />
         <Styled.Section>
-          {/* <IoMusicalNoteOutline size={50} /> */}
-          <p>
-            Listen to the intro, then find the correct Joywave song in the list.
-          </p>
+          <Styled.IconSection>
+            <IoMusicalNoteOutline size={50} />
+            <p>
+              Listen to the intro, then find the correct Joywave song in the list.
+            </p>
+          </Styled.IconSection>
         </Styled.Section>
-        <Styled.Section>
-          {/* <IoHelpCircleOutline size={50} /> */}
-          <p>Skipped or incorrect attempts unlock more of the intro</p>
+        <Styled.Section style={{flexDirection: "row", display: "flex", justifyContent: "flex-start", gap: "10px", marginLeft: "0px", paddingLeft: "0px"}}>
+          <Styled.IconSection>
+            <IoHelpCircleOutline size={50} /> 
+            <p>Skipped or incorrect attempts unlock more of the intro</p>
+          </Styled.IconSection>
         </Styled.Section>
         <Styled.Section>
           <p>Answer in as few tries as possible and share your score!</p>

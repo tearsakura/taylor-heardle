@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Container = styled.div`
   position: absolute;
   top: 0;
@@ -32,6 +33,10 @@ export const PopUp = styled.div`
   align-items: center;
   justify-content: center;
 
+  div:nth-child(4) {
+    align-self: flex-start;
+  }
+
   h1 {
     margin-bottom: 0;
   }
@@ -52,6 +57,18 @@ export const Section = styled.div`
   gap: 10px;
   align-items: center;
   justify-content: space-between;
+
+  a {
+    color: ${({ theme }) => theme.text};
+  }
+`;
+
+export const IconSection = styled.div`
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
 
   a {
     color: ${({ theme }) => theme.text};
